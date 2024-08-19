@@ -2,17 +2,22 @@
 
 // your code = 0
 
-let sum = 1;
-found = False
+
+let number = 0;
 
 
-while not found:
+let found = false;
+
+
+while (!found) {
    
-    sum = int(input("Введите число от 1 до 20: "))
+    number = prompt("Введите число от 1 до 20: ");
 
     
-    if 1 <= sum <= 20:
-        print(f"Вы ввели число {sum}, оно находится в требуемом диапазоне.")
-        found = True
-    else:
-        print(f"Вы ввели число {sum}, которое не находится в требуемом диапазоне (от 1 до 20).")
+    if (parseInt(number) >= 1 && parseInt(number) <= 20) {
+        console.log(`Вы ввели число ${number}, оно находится в требуемом диапазоне.`);
+        found = true;
+    } else {
+        console.log(`Вы ввели число ${number}, которое не находится в требуемом диапазоне (от 1 до 20).`);
+    }
+}
